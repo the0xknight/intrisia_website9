@@ -1,10 +1,4 @@
 import React from "react";
-<nav>
-<Link to="/pages/quizpage">quizpage</Link>
-<Link to="/roadmap">roadmap</Link>
-<Link to="/shadowpro">shadowpro</Link>
-</nav>
-
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
