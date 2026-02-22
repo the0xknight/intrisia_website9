@@ -26,3 +26,21 @@ def history():
         r["_id"] = str(r["_id"])
         out.append(r)
     return jsonify(out), 200
+
+
+@quiz_bp.route("/", methods=["GET"])
+def get_questions():
+    questions = list(mongo.db.quiz_questions.find({}, {"_id": 0}))
+    return jsonify(questions)
+
+
+# adding 
+
+
+@quiz_bp.route("/history", methods=["GET"])
+def quiz_history():
+    results = list(mongo.db.quiz_results.find({}, {"_id": 0}))
+    return jsonify(results)
+
+
+
