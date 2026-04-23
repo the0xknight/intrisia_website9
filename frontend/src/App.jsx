@@ -7,6 +7,7 @@ import ExplorePage from "./pages/explorepage";
 import QuizPage from "./pages/quizpage";
 import RoadmapPage from "./pages/roadmap";
 import Shadowpro from "./pages/shadowpro";
+import CareerDetailsPage from "./pages/CareerDetailsPage";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/quiz" element={<QuizPage />} />
         <Route path="/roadmap" element={<RoadmapPage />} />
         <Route path="/shadowpro" element={<Shadowpro />} />
+        <Route path="/career/:id" element={<CareerDetailsPage />} />
       </Routes>
       <Footer />
     </Router>

@@ -190,9 +190,7 @@ questions = [
     }
 ]
 
-# Insert into Database
-#collection.insert_many(questions)
-#print("Successfully seeded 20 expanded career discovery questions!")
+
 
 
 # Insert only if empty
